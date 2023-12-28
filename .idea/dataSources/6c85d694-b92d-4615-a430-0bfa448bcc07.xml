@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.51">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>MyISAM</DefaultEngine>
@@ -1008,8 +1008,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="292" parent="1" name="university">
-      <IntrospectionTimestamp>2023-12-28.15:19:22</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-12-28.13:19:22</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2023-12-28.13:19:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="293" parent="1" name="universityapplication">
