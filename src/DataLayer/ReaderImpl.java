@@ -54,7 +54,6 @@ public class ReaderImpl implements Reader {
         return courses;
     }
 
-
     public String[][] readFeedbacks(){
         String[][] feedbacks =new String[100][3];
         int i=0;

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6c85d694-b92d-4615-a430-0bfa448bcc07.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6c85d694-b92d-4615-a430-0bfa448bcc07.xml" afterDir="false" />
+    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="git status">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703768909970</updated>
       <workItem from="1703768911057" duration="1226000" />
-      <workItem from="1703773277905" duration="380000" />
+      <workItem from="1703773277905" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="git status">
       <option name="closed" value="true" />
@@ -83,7 +83,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703769779466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git status">
+      <option name="closed" value="true" />
+      <created>1703773775417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703773775417</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git status">
+      <option name="closed" value="true" />
+      <created>1703773862786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703773862786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
