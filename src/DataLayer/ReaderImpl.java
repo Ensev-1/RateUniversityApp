@@ -79,4 +79,38 @@ public class ReaderImpl implements Reader {
     }
 
 
+    public String[] readCourseNames() throws SQLException {
+
+        String[] courseNames= new String[10];
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT CourseName FROM courses";
+        ResultSet rs= stmt.executeQuery(query);
+
+        int i=0;
+        while(rs.next()) {
+            courseNames[i++]= rs.getString("CourseName");
+        }
+
+        return courseNames;
+    }
+
+    public String readCourseDescription(String courseName) throws SQLException {
+
+        String courseDescription = null;
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT CourseDescription FROM courses WHERE (CourseName='"+courseName+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        while(rs.next()) {
+            courseDescription = rs.getString("CourseDescription");
+        }
+
+        return courseDescription;
+    }
+
+
 }
