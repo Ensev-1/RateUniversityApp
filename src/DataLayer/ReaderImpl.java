@@ -112,5 +112,20 @@ public class ReaderImpl implements Reader {
         return courseDescription;
     }
 
+    public int readCourseID(String courseName) throws SQLException {
+
+        int courseID = -1;
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT CourseID FROM courses WHERE (CourseName='"+courseName+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        while(rs.next()) {
+            courseID = rs.getInt("CourseID");
+        }
+
+        return courseID;
+    }
 
 }
