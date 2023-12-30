@@ -128,4 +128,32 @@ public class ReaderImpl implements Reader {
         return courseID;
     }
 
+    public int[] readCourseIDS(int id) throws SQLException {
+        int[] coursesID;
+        try {
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+            Statement stmt = conn.createStatement();
+
+            String query = "SELECT CourseID FROM coursesforusers WHERE (UserID='" + id + "')";
+            ResultSet rs = stmt.executeQuery(query);
+
+            int i = 0;
+            while (rs.next()) {
+                i++;
+            }
+
+            coursesID = new int[i];
+            rs = stmt.executeQuery(query);
+
+            i = 0;
+            while (rs.next()) {
+                coursesID[i] = rs.getInt("CourseID");
+                i++;
+            }
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+        return coursesID;
+    }
+
 }
