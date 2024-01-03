@@ -156,4 +156,25 @@ public class ReaderImpl implements Reader {
         return coursesID;
     }
 
+    public int averageRatingOfCourse(int courseID) throws SQLException{
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT FeedbackRating FROM feedbacks WHERE (CourseID='"+courseID+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        int i=0, average=0;
+        while(rs.next()){
+            average = average + rs.getInt("FeedbackRating");
+            i++;
+        }
+
+        if(i!=0){
+            average /= i;
+        }
+        else average=-1;
+
+        return average;
+    }
+
 }
