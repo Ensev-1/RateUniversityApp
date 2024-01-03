@@ -177,4 +177,30 @@ public class ReaderImpl implements Reader {
         return average;
     }
 
+    public boolean hasLeftFeedbackForCourse(int userID,int courseID) throws SQLException {
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT userID FROM feedbacks WHERE (CourseID='"+courseID+"' AND UserID='"+userID+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        return rs.next();
+    }
+
+    public String courseNameById(int courseID) throws SQLException {
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT CourseName FROM courses WHERE (CourseID='"+courseID+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        String emri = "";
+
+        while(rs.next()){
+            emri = rs.getString("CourseName");
+        }
+
+        return emri;
+    }
+
 }
