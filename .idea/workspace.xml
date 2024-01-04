@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="Insert some data into the tables">
+    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="Added a new Frame for when you select a course.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +81,12 @@
       <workItem from="1703778257713" duration="6000" />
       <workItem from="1703857865809" duration="547000" />
       <workItem from="1703860320944" duration="21000" />
+      <workItem from="1703860904265" duration="133000" />
+      <workItem from="1703861092508" duration="24000" />
+      <workItem from="1703929082187" duration="152000" />
+      <workItem from="1703929667417" duration="18000" />
+      <workItem from="1704282936994" duration="106000" />
+      <workItem from="1704287097751" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="git status">
       <option name="closed" value="true" />
@@ -106,7 +112,31 @@
       <option name="project" value="LOCAL" />
       <updated>1703858402353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a method in ReaderImpl, readCourseID(courseName).">
+      <option name="closed" value="true" />
+      <created>1703861030525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703861030525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a new Frame when you're logged in. FrameAccount.">
+      <option name="closed" value="true" />
+      <created>1703929224827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703929224827</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added a new Frame for when you select a course.">
+      <option name="closed" value="true" />
+      <created>1704283032275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704283032275</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +145,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git status" />
     <MESSAGE value="Insert some data into the tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insert some data into the tables" />
+    <MESSAGE value="Added a method in ReaderImpl, readCourseID(courseName)." />
+    <MESSAGE value="Added a new Frame when you're logged in. FrameAccount." />
+    <MESSAGE value="Added a new Frame for when you select a course." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new Frame for when you select a course." />
   </component>
 </project>
