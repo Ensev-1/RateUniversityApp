@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="git status">
+    <list default="true" id="5113db7e-8e2c-4e4b-8c45-eb6c73a7eaa0" name="Changes" comment="Added a new Frame so you can leave feedbacks for a certain course you've selected.">
+      <change afterPath="$PROJECT_DIR$/src/Tests/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameCourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameFeedbackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameMostRatedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameNoAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameNoCourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/FrameSignUpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/ReaderImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_29_2023_3_33_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_29_2023_3_33_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RateUniversityApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RateUniversityApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataLayer/ReaderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataLayer/ReaderImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +30,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,17 +48,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/RateUniversityApp",
+    "last_opened_file_path": "C:/Users/User/Downloads/mysql-connector-j-8.1.0.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -57,12 +73,33 @@
     ]
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-f644763e9732-1e16d6ec" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\RateUniversityApp\src\Tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in RateUniversityApp">
+    <configuration name="UniversityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UniversityApplication" />
+      <module name="RateUniversityApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RateUniversityApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RateUniversityApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in RateUniversityApp" />
+        <item itemvalue="Application.UniversityApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +110,19 @@
       <option name="presentableId" value="Default" />
       <updated>1703768909970</updated>
       <workItem from="1703768911057" duration="1226000" />
-      <workItem from="1703773277905" duration="683000" />
+      <workItem from="1703778144974" duration="92000" />
+      <workItem from="1703778257713" duration="6000" />
+      <workItem from="1703857865809" duration="547000" />
+      <workItem from="1703860320944" duration="21000" />
+      <workItem from="1703860904265" duration="133000" />
+      <workItem from="1703861092508" duration="24000" />
+      <workItem from="1703929082187" duration="152000" />
+      <workItem from="1703929667417" duration="18000" />
+      <workItem from="1704282936994" duration="106000" />
+      <workItem from="1704287097751" duration="6000" />
+      <workItem from="1704360106736" duration="123000" />
+      <workItem from="1704456431709" duration="7000" />
+      <workItem from="1704470206028" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="git status">
       <option name="closed" value="true" />
@@ -83,23 +132,55 @@
       <option name="project" value="LOCAL" />
       <updated>1703769779466</updated>
     </task>
-    <task id="LOCAL-00002" summary="git status">
+    <task id="LOCAL-00002" summary="Insert some data into the tables">
       <option name="closed" value="true" />
-      <created>1703773775417</created>
+      <created>1703858014714</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1703773775417</updated>
+      <updated>1703858014714</updated>
     </task>
-    <task id="LOCAL-00003" summary="git status">
+    <task id="LOCAL-00003" summary="Insert some data into the tables">
       <option name="closed" value="true" />
-      <created>1703773862786</created>
+      <created>1703858402353</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1703773862786</updated>
+      <updated>1703858402353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a method in ReaderImpl, readCourseID(courseName).">
+      <option name="closed" value="true" />
+      <created>1703861030525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703861030525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a new Frame when you're logged in. FrameAccount.">
+      <option name="closed" value="true" />
+      <created>1703929224827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703929224827</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added a new Frame for when you select a course.">
+      <option name="closed" value="true" />
+      <created>1704283032275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704283032275</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added a new Frame so you can leave feedbacks for a certain course you've selected.">
+      <option name="closed" value="true" />
+      <created>1704360222538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704360222538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +188,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git status" />
-    <option name="LAST_COMMIT_MESSAGE" value="git status" />
+    <MESSAGE value="Insert some data into the tables" />
+    <MESSAGE value="Added a method in ReaderImpl, readCourseID(courseName)." />
+    <MESSAGE value="Added a new Frame when you're logged in. FrameAccount." />
+    <MESSAGE value="Added a new Frame for when you select a course." />
+    <MESSAGE value="Added a new Frame so you can leave feedbacks for a certain course you've selected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new Frame so you can leave feedbacks for a certain course you've selected." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RateUniversityApp$All_in_RateUniversityApp.ic" NAME="All in RateUniversityApp Coverage Results" MODIFIED="1704470877251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

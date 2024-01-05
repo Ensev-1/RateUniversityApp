@@ -177,6 +177,28 @@ public class ReaderImpl implements Reader {
         return average;
     }
 
+    public String[][] readFeedbacksForCourse(int courseID) throws SQLException {
+
+        String[][] feedbacks;
+
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Statement stmt = conn.createStatement();
+        String query="SELECT FeedbackDescription,FeedbackRating FROM feedbacks WHERE (CourseID='"+courseID+"')";
+        ResultSet rs= stmt.executeQuery(query);
+
+        feedbacks = new String[5][2];
+        int i=0;
+
+        while(rs.next()) {
+            feedbacks[i][0] = rs.getString("FeedbackDescription");
+            feedbacks[i][1] = rs.getString("FeedbackRating");
+            i++;
+            i%=5;
+        }
+
+        return feedbacks;
+    }
+
     public boolean hasLeftFeedbackForCourse(int userID,int courseID) throws SQLException {
 
         Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
