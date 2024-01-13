@@ -33,7 +33,7 @@ public class Account {
 
         String query="INSERT INTO users(FirstName, LastName, Email, Password) " +
                 "VALUES('"+firstName+"','"+lastName+"','"+email+"','"+password+"')";
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
 
         stmt.executeUpdate(query);
