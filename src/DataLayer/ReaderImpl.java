@@ -7,7 +7,7 @@ public class ReaderImpl implements Reader {
         String[][] users =new String[100][5];
         int i=0;
         try{
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
             Statement stmt = conn.createStatement();
 
             String query="SELECT * FROM users";
@@ -34,7 +34,7 @@ public class ReaderImpl implements Reader {
 
         int i=0;
         try{
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
             Statement stmt = conn.createStatement();
 
             String query="SELECT * FROM courses";
@@ -58,7 +58,7 @@ public class ReaderImpl implements Reader {
         String[][] feedbacks =new String[100][3];
         int i=0;
         try{
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
             Statement stmt = conn.createStatement();
 
             String query="SELECT * FROM feedbacks";
@@ -83,7 +83,7 @@ public class ReaderImpl implements Reader {
 
         String[] courseNames= new String[10];
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT CourseName FROM courses";
         ResultSet rs= stmt.executeQuery(query);
@@ -100,7 +100,7 @@ public class ReaderImpl implements Reader {
 
         String courseDescription = null;
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT CourseDescription FROM courses WHERE (CourseName='"+courseName+"')";
         ResultSet rs= stmt.executeQuery(query);
@@ -116,7 +116,7 @@ public class ReaderImpl implements Reader {
 
         int courseID = -1;
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT CourseID FROM courses WHERE (CourseName='"+courseName+"')";
         ResultSet rs= stmt.executeQuery(query);
@@ -131,7 +131,7 @@ public class ReaderImpl implements Reader {
     public int[] readCourseIDS(int id) throws SQLException {
         int[] coursesID;
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
             Statement stmt = conn.createStatement();
 
             String query = "SELECT CourseID FROM coursesforusers WHERE (UserID='" + id + "')";
@@ -158,7 +158,7 @@ public class ReaderImpl implements Reader {
 
     public int averageRatingOfCourse(int courseID) throws SQLException{
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT FeedbackRating FROM feedbacks WHERE (CourseID='"+courseID+"')";
         ResultSet rs= stmt.executeQuery(query);
@@ -181,7 +181,7 @@ public class ReaderImpl implements Reader {
 
         String[][] feedbacks;
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT FeedbackDescription,FeedbackRating FROM feedbacks WHERE (CourseID='"+courseID+"')";
         ResultSet rs= stmt.executeQuery(query);
@@ -201,7 +201,7 @@ public class ReaderImpl implements Reader {
 
     public boolean hasLeftFeedbackForCourse(int userID,int courseID) throws SQLException {
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT userID FROM feedbacks WHERE (CourseID='"+courseID+"' AND UserID='"+userID+"')";
         ResultSet rs= stmt.executeQuery(query);
@@ -211,7 +211,7 @@ public class ReaderImpl implements Reader {
 
     public String courseNameById(int courseID) throws SQLException {
 
-        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UniversityApplication", "root", "");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "");
         Statement stmt = conn.createStatement();
         String query="SELECT CourseName FROM courses WHERE (CourseID='"+courseID+"')";
         ResultSet rs= stmt.executeQuery(query);

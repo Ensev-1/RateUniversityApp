@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/DataLayer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/PresentationLayer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Database" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

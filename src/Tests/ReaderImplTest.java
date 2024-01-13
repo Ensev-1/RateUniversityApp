@@ -90,11 +90,11 @@ class ReaderImplTest {
     public void testReadFeedbacksForCourse() throws SQLException {
         ReaderImpl r = new ReaderImpl();
 
-        String[][] feedbacks = r.readFeedbacksForCourse(1);
+        String[][] feedbacks = r.readFeedbacksForCourse(2);
 
-        Assertions.assertEquals(feedbacks[0][0], "Kush ka pasion qarqet duhet ta ndjek kete kurs.");
-        Assertions.assertEquals(feedbacks[0][1], "4");
-        Assertions.assertEquals(feedbacks[1][0], "Lenda ime e preferuar!");
+        Assertions.assertEquals(feedbacks[0][0], "Nje lende jashtezakonisht e bukur dhe interesante. Nuk eshte nje lende e veshtire dhe merr shume informacione te reja!");
+        Assertions.assertEquals(feedbacks[0][1], "5");
+        Assertions.assertEquals(feedbacks[1][0], "Ja vlen te ndjekesh si kurs! Jashtezakonisht i bukur.");
         Assertions.assertEquals(feedbacks[1][1], "5");
     }
 
@@ -114,8 +114,8 @@ class ReaderImplTest {
     public void testHasLeftFeedbackForCourse() throws SQLException {
         ReaderImpl r = new ReaderImpl();
 
-        boolean userOneHasLeftFeedback = r.hasLeftFeedbackForCourse(1,4);
-        boolean userOneHasNotLeftFeedback = r.hasLeftFeedbackForCourse(1, 5);
+        boolean userOneHasLeftFeedback = r.hasLeftFeedbackForCourse(1,2);
+        boolean userOneHasNotLeftFeedback = r.hasLeftFeedbackForCourse(1, 4);
 
         Assertions.assertTrue(userOneHasLeftFeedback);
         Assertions.assertFalse(userOneHasNotLeftFeedback);
