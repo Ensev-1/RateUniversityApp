@@ -7,31 +7,31 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <ServerVersion>8.2.0</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="cdata">
+    <schema id="2" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="3" parent="1" name="elibrary">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="4" parent="1" name="information_schema">
+    <schema id="3" parent="1" name="information_schema">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
-    <schema id="5" parent="1" name="lab3">
+    <schema id="4" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="6" parent="1" name="mysql">
+    <schema id="5" parent="1" name="sys">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="7" parent="1" name="performance_schema">
+    <schema id="6" parent="1" name="universityapplication">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="8" parent="1" name="sys">
+    <schema id="7" parent="1" name="university">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="9" parent="1" name="university">
+    <schema id="8" parent="1" name="elibrary">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="10" parent="1" name="universityapplication">
+    <schema id="9" parent="1" name="lab3">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="10" parent="1" name="cdata">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
   </database-model>
