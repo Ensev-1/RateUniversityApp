@@ -10,8 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/BussinessLayer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DataLayer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/PresentationLayer" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/Database" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
